@@ -17,9 +17,6 @@ Base.metadata.create_all(engine)
 
 
 
-with Session(engine) as session:
-    user=session.query(User).filter(User.name=="jijo").first()
-    print(user.id,user.email)
 
 
 
